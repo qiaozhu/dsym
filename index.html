@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>东申一美</title>
+    <meta name="description" content="东申一美">
+    <meta name="keywords" content="东申一美">
+    <meta name="author" content="qz">
+
+    <link rel="icon" href="./image/icon.png" type="image/x-icon">
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/hover.min.css" rel="stylesheet" />
+    <link href="./css/animate.css" rel="stylesheet" />
+    <link href="./js/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./js/assets/owl.theme.default.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="layout-header">
+            <div class="header-top">我是头部</div>
+            <div class="header-nav">
+                <ul class="navbox">
+                    <li class="navitem">首页</li>
+                    <li class="navitem">关于我们</li>
+                    <li class="navitem">最新动态</li>
+                    <li class="navitem">案例展示</li>
+                    <li class="navitem">报价系统</li>
+                    <li class="navitem">服务流程</li>
+                    <li class="navitem">核心团队</li>
+                    <li class="navitem">联系我们</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="layout-content">
+            <div id="owl-carousel" class="owl-carousel owl-theme">
+                <div class="item" style="background-image:url('https://dummyimage.com/940x328/ffcc33/FFF.png&text=1')">
+                </div>
+                <div class="item" style="background-image:url('https://dummyimage.com/1240x528/ff0000/FFF.png&text=2')">
+                </div>
+                <div class="item" style="background-image:url('https://dummyimage.com/940x328/ffff00/FFF.png&text=3')">
+                </div>
+                <div class="item" style="background-image:url('https://dummyimage.com/940x328/11ab19/FFF.png&text=4')">
+                </div>
+                <div class="item" style="background-image:url('https://dummyimage.com/940x328/0e0e0e/FFF.png&text=5')">
+                </div>
+            </div>
+            <div class="blockUI-demo" style="width: 500px;height: 150px; margin: 0 auto;background: #00b300;color: #FFFFFF;text-align: center;">
+                我是文本
+            </div>
+            <div class="blockUI-content" style="display:none;">
+                wo shi tanchu neirong
+            </div>
+        </div>
+        <p style="text-align: center;padding: 10px;">
+            <span class="hvr-shutter-in-horizontal" id="blockButton1">hover触发</span>
+            <span class="hvr-pulse-grow" id="blockButton2">click触发</span>
+            <span class="hvr-float-shadow" id="unblockButton">关闭</span>
+            <span class="hvr-float-shadow" id="animatedadd">动画</span>
+        </p>
+        <div style="width:900px;margin: 0 auto" class="cl">
+            <div style="width: 300px;float: left;" class="js-fadeInRight">
+                <img style="display:block;width: 100px;height:100px;margin: 50px auto" src="./image/likaifu.jpg" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
+                <img style="display:block;width: 100px;height:100px;margin: 50px auto" src="./image/liyanhong.jpg" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
+            </div>
+            <div class="fl js-fadeInUp">
+                <img style="width: 200px;" src="./image/iphone_blank_2.png" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
+            </div>
+            <div style="width: 300px;float: left;" class="js-fadeInLeft">
+                <img style="display:block;width: 100px;height:100px;margin: 50px auto" src="./image/mahuateng.jpg" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
+                <img style="display:block;width: 100px;height:100px;margin: 50px auto" src="./image/mayun.jpg" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
+            </div>
+        </div>
+        <div class="layout-footer">
+            我是底部
+        </div>
+    </div>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.blockUI.min.js"></script>
+    <script>
+        $(function () {
+            $('#owl-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                lazyLoad: true,
+                autoplayTimeout: 3000,
+                // autoplay: true,
+                autoplayHoverPause: true,
+                dots: true,
+                nav: true,
+                navText: ["上一个", "下一个"]
+            });
+            $.blockUI.defaults.overlayCSS = {
+                backgroundColor: '#000',
+                opacity: 0.6,
+                cursor: 'default'
+            }
+            $('#blockButton1').hover(function () {
+                $('div.blockUI-demo').block({
+                    message: $(".blockUI-content"),
+                    css: {
+                        border: '3px solid #a00',
+                        cursor: 'default'
+                    }
+                });
+            }, function () {
+                $('div.blockUI-demo').unblock();
+            });
+            $('#blockButton2').click(function () {
+                $('div.blockUI-demo').block({
+                    message: $(".blockUI-content"),
+                    css: {
+                        border: '3px solid #a00',
+                        cursor: 'default'
+                    }
+                });
+            });
+
+            $('#unblockButton').click(function () {
+                $('div.blockUI-demo').unblock();
+            });
+            $('#animatedadd').click(function () {
+                $(".js-fadeInRight").addClass("animated fadeInRight");
+                $(".js-fadeInUp").addClass("animated fadeInUp");
+                $(".js-fadeInLeft").addClass("animated fadeInLeft");
+            });
+
+            $(window).scroll(function (event) {
+                var top = $(window).scrollTop();
+                if (top > 20) {
+                    $(".js-fadeInRight").addClass("animated fadeInRight");
+                    setTimeout(function () {
+                        // $(".js-fadeInRight").removeClass("animated fadeInRight");
+                    }, 1000);
+                    $(".js-fadeInUp").addClass("animated fadeInUp");
+                    setTimeout(function () {
+                        // $(".js-fadeInUp").removeClass("animated fadeInUp");
+                    }, 1000);
+                    $(".js-fadeInLeft").addClass("animated fadeInLeft");
+                    setTimeout(function () {
+                        // $(".js-fadeInLeft").removeClass("animated fadeInLeft");
+                    }, 1000);
+                }
+
+            });
+        })
+    </script>
+</body>
+
+</html>
