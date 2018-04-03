@@ -276,43 +276,48 @@ input[type="search"]::-webkit-search-decoration {
 /*重置滚动条样式*/
 
 html {
+    /*三角箭头的颜色*/
+    scrollbar-arrow-color: #C2C2C2;
+    /*滚动条滑块按钮的颜色*/
     scrollbar-face-color: #C2C2C2;
-    /*滑块*/
-    scrollbar-arrow-color: #FFFFFF;
-    /*箭头*/
-    scrollbar-3dlight-color: #FFFFFF;
-    /*最外左*/
+    /*滚动条整体颜色*/
     scrollbar-highlight-color: #FFFFFF;
-    /*左二*/
-    scrollbar-shadow-color: #FFFFFF;
-    /*右二*/
-    scrollbar-darkshadow-color: #FFFFFF;
-    /*最外右*/
+    /*滚动条阴影*/
+    scrollbar-shadow-color: #C2C2C2;
+    /*滚动条轨道颜色*/
     scrollbar-track-color: #FFFFFF;
-    /*滑道*/
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color: #fff
 }
 
 ::-webkit-scrollbar {
-    width: 13px;
-    height: 13px
+    /*滚动条整体部分*/
+    width: 8px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /*滚动条的轨道*/
+    background-color: #FFFFFF;
 }
 
 ::-webkit-scrollbar-thumb {
+    /*滚动条的滑块按钮*/
+    border-radius: 0;
     background-color: #c2c2c2;
     background-clip: padding-box;
-    min-height: 28px
 }
 
 ::-webkit-scrollbar-thumb:hover {
+    /*滚动条的滑块按钮hover*/
     background-color: #a0a0a0
 }
 
+::-webkit-scrollbar-button {
+    /*滚动条的上下两端的按钮*/
+    height: 0;
+    background-color: #FFFFFF;
+}
+
 body {
-    font-size: 14px;
     font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
     font-size: 14px;
     color: #333;

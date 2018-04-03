@@ -9,7 +9,7 @@ layui.define('layer', function (exports) {
             console.log(layer);
             console.log(layui.$);
             console.log($('.blockUI-content').html());
-            alert('Hello ' + (str || 'mask'));
+            console.log('Hello ' + (str || 'mask'));
         }
     };
 
