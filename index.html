@@ -23,7 +23,17 @@
 <body>
     <div class="layout">
         <div class="layout-header">
-            <div class="header-top">我是头部</div>
+            <div class="header-top cl">
+                <div class="header-logo">
+                    <img src="./image/logo.png" alt="">
+                </div>
+                <div class="header-slogan">
+                    <img src="./image/topkouhao.png" alt="">
+                </div>
+                <div class="header-tel">
+                    <img src="./image/toptel.png" alt="">
+                </div>
+            </div>
             <div class="header-nav">
                 <ul class="navbox">
                     <li class="navitem">首页</li>
@@ -36,20 +46,44 @@
                     <li class="navitem">联系我们</li>
                 </ul>
             </div>
-
+        </div>
+        <div class="layui-carousel" id="layui-carousel">
+            <div carousel-item>
+                <div class="item" style="background-image:url('./image/banner-index.jpg')">
+                </div>
+                <div class="item" style="background-image:url('./image/banner-aboutus.jpg')">
+                </div>
+                <div class="item" style="background-image:url('./image/banner-news.jpg')">
+                </div>
+                <div class="item" style="background-image:url('./image/banner-case.jpg')">
+                </div>
+            </div>
         </div>
         <div class="layout-content">
-            <div class="layui-carousel" id="layui-carousel">
-                <div carousel-item>
-                    <div class="item" style="background-image:url('https://dummyimage.com/1300x450/009688/FFF.png&text=1')">
+            <div class="layui-container">
+                <div class="layui-row aboutus-pane">
+                    <div class="layui-col-md6">
+                        <div class="title-line"></div>
+                        <div class="panel-title">
+                            关于
+                            <span>我们</span> Us
+                        </div>
+                        <p>东申一美自成立以来通过服务创新来满足客户潜在需求，通过技术创新来改变传统装修模式。</p>
+                        <p>本公司以独特的服务定位，用极短的时间在快本公司以独特的服务定位，用极短的时间在快速发展的装饰行业不断开拓创新，专注中国美业空间规划和装饰软装一站式服务，以整合革新、重新定义了中国美业装饰领域的新标杆---整店输出的全新模式！</p>
+
+                        <p>Since Its Inception, Oriental Beauty Has Served To Meet The Potential Needs Of Its Customers Through
+                            Service Innovation, And Has Changed Its Traditional Decoration Model Through Technological Innovation.
+                        </p>
+                        <p>ith A Unique Service Orientation, The Company Continuously Explores And Innovates In The Fast-growing
+                            Decoration Industry In A Very Short Period Of Time. It Focuses On China's Us Space Planning And
+                            One-stop Service For Decoration And Soft-packing To Integrate Innovations And Redefine The Field
+                            Of Decoration In China Meiye. The New Benchmark --- A New Model Of Whole Shop Output!</p>
+                        <div class="moreflag"></div>
                     </div>
-                    <div class="item" style="background-image:url('https://dummyimage.com/1300x450/5FB878/FFF.png&text=2')">
-                    </div>
-                    <div class="item" style="background-image:url('https://dummyimage.com/1300x450/9b9c3b/FFF.png&text=3')">
-                    </div>
-                    <div class="item" style="background-image:url('https://dummyimage.com/1300x450/55619a/FFF.png&text=4')">
-                    </div>
-                    <div class="item" style="background-image:url('https://dummyimage.com/1300x450/a372a7/FFF.png&text=5')">
+                    <div class="layui-col-md6">
+                        <div class="aboutus-img">
+                            <img src="./image/aboutus.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,10 +135,11 @@
             //建造实例
             carousel.render({
                 elem: '#layui-carousel',
-                width: '1300px', //设置容器宽度
-                height: '450px', //设置容器高度
+                width: '100%', //设置容器宽度
+                height: '540px', //设置容器高度
                 arrow: 'always', //始终显示箭头
                 autoplay: true, //自动播放
+                interval: 5000, //切换间隔
                 indicator: 'inside' //指示器位置
             });
             mask.hello('World!');
