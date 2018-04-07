@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no" />
     <meta name="format-detection" content="email=no" />
@@ -18,131 +18,412 @@
     <link href="./css/animate.css" rel="stylesheet" />
     <link href="./js/layui/css/layui.css" rel="stylesheet">
     <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="layout">
-        <div class="layout-header">
-            <div class="header-top cl">
-                <div class="header-logo">
-                    <img src="./image/logo.png" alt="">
-                </div>
-                <div class="header-slogan">
-                    <img src="./image/topkouhao.png" alt="">
-                </div>
-                <div class="header-tel">
-                    <img src="./image/toptel.png" alt="">
-                </div>
+    <div class="layout-header">
+        <div class="header-top cl">
+            <div class="header-logo">
+                <img src="./image/logo.png" alt="">
             </div>
-            <div class="header-nav">
-                <ul class="navbox">
-                    <li class="navitem">首页</li>
+            <div class="header-slogan">
+                <img src="./image/topkouhao.png" alt="">
+            </div>
+            <div class="header-tel">
+                <img src="./image/toptel.png" alt="">
+            </div>
+        </div>
+        <div class="header-nav">
+            <ul class="navbox">
+                <a href="./index.html" target="_self">
+                    <li class="navitem navselected">首页</li>
+                </a>
+                <a href="./aboutus.html" target="_self">
                     <li class="navitem">关于我们</li>
+                </a>
+                <a href="./news.html" target="_self">
                     <li class="navitem">最新动态</li>
+                </a>
+                <a href="./case.html" target="_self">
                     <li class="navitem">案例展示</li>
+                </a>
+                <a href="./price.html" target="_self">
                     <li class="navitem">报价系统</li>
+                </a>
+                <a href="./services.html" target="_self">
                     <li class="navitem">服务流程</li>
+                </a>
+                <a href="./team.html" target="_self">
                     <li class="navitem">核心团队</li>
+                </a>
+                <a href="./contactus.html" target="_self">
                     <li class="navitem">联系我们</li>
-                </ul>
-            </div>
-        </div>
-        <div class="layui-carousel" id="layui-carousel">
-            <div carousel-item>
-                <div class="item" style="background-image:url('./image/banner-index.jpg')">
-                </div>
-                <div class="item" style="background-image:url('./image/banner-aboutus.jpg')">
-                </div>
-                <div class="item" style="background-image:url('./image/banner-news.jpg')">
-                </div>
-                <div class="item" style="background-image:url('./image/banner-case.jpg')">
-                </div>
-            </div>
-        </div>
-        <div class="layout-content">
-            <div class="layui-container">
-                <div class="layui-row aboutus-pane">
-                    <div class="layui-col-md6">
-                        <div class="title-line"></div>
-                        <div class="panel-title">
-                            关于
-                            <span>我们</span> Us
-                        </div>
-                        <p>东申一美自成立以来通过服务创新来满足客户潜在需求，通过技术创新来改变传统装修模式。</p>
-                        <p>本公司以独特的服务定位，用极短的时间在快本公司以独特的服务定位，用极短的时间在快速发展的装饰行业不断开拓创新，专注中国美业空间规划和装饰软装一站式服务，以整合革新、重新定义了中国美业装饰领域的新标杆---整店输出的全新模式！</p>
-
-                        <p>Since Its Inception, Oriental Beauty Has Served To Meet The Potential Needs Of Its Customers Through
-                            Service Innovation, And Has Changed Its Traditional Decoration Model Through Technological Innovation.
-                        </p>
-                        <p>ith A Unique Service Orientation, The Company Continuously Explores And Innovates In The Fast-growing
-                            Decoration Industry In A Very Short Period Of Time. It Focuses On China's Us Space Planning And
-                            One-stop Service For Decoration And Soft-packing To Integrate Innovations And Redefine The Field
-                            Of Decoration In China Meiye. The New Benchmark --- A New Model Of Whole Shop Output!</p>
-                        <div class="moreflag"></div>
-                    </div>
-                    <div class="layui-col-md6">
-                        <div class="aboutus-img">
-                            <img src="./image/aboutus.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="blockUI-demo" style="width: 500px;height: 150px; margin: 20px auto;background: #00b300;color: #FFFFFF;text-align: center;">
-                我是文本
-            </div>
-            <div class="blockUI-content" style="display:none;">
-                wo shi tanchu neirong
-            </div>
-        </div>
-        <p style="text-align: center;padding: 10px;">
-            <span class="hvr-shutter-in-horizontal" id="blockButton1">hover触发</span>
-            <span class="hvr-pulse-grow" id="blockButton2">click触发</span>
-            <span class="hvr-float-shadow" id="unblockButton">关闭</span>
-            <span class="hvr-float-shadow" id="animatedadd">添加动画</span>
-        </p>
-        <div style="width:900px;margin: 0 auto" class="cl">
-            <div style="width: 300px;float: left;" class="js-fadeInRight">
-                <img style="display:block;width: 100px;height:100px;margin: 30px auto" src="./image/likaifu.jpg" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
-                <img style="display:block;width: 100px;height:100px;margin: 30px auto" src="./image/liyanhong.jpg" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
-            </div>
-            <div class="fl js-fadeInUp" style="width: 300px;">
-                <img style="display:block;width: 200px;margin: 0 auto" src="./image/iphone_blank_2.png" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
-            </div>
-            <div style="width: 300px;float: left;" class="js-fadeInLeft">
-                <img style="display:block;width: 100px;height:100px;margin: 30px auto" src="./image/mahuateng.jpg" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
-                <img style="display:block;width: 100px;height:100px;margin: 30px auto" src="./image/mayun.jpg" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
-            </div>
-        </div>
-
-        <div class="layout-footer">
-            我是底部
+                </a>
+            </ul>
         </div>
     </div>
-    <script src="./js/jquery-2.1.4.min.js"></script>
-    <script src="./js/layui/layui.js"></script>
-    <script src="./js/jquery.blockUI.min.js"></script>
+    <div class="layui-carousel" id="layui-carousel">
+        <div carousel-item>
+            <div class="item" style="background-image:url('./image/banner-index.jpg')">
+            </div>
+            <div class="item" style="background-image:url('./image/banner-aboutus.jpg')">
+            </div>
+            <div class="item" style="background-image:url('./image/banner-news.jpg')">
+            </div>
+            <div class="item" style="background-image:url('./image/banner-case.jpg')">
+            </div>
+        </div>
+    </div>
+    <div class="layout-content aboutus-panel cl">
+        <div class="title-line"></div>
+        <div class="aboutus-col-left">
+            <div class="panel-title aboutus-title">
+                <span>关于</span>
+                <span class="font-red pr-10">我们</span>
+                <span>Us</span>
+            </div>
+            <p class="text-ch mt-20">东申一美自成立以来通过服务创新来满足客户潜在需求，通过技术创新来改变传统装修模式。</p>
+            <p class="text-ch">本公司以独特的服务定位，用极短的时间在快速发展的装饰行业不断开拓创新，专注中国美业空间规划和装饰软装一站式服务，以整合革新、重新定义了中国美业装饰领域的新标杆---整店输出的全新模式！</p>
+
+            <p class="text-en mt-10">Since Its Inception, Oriental Beauty Has Served To Meet The Potential Needs Of Its Customers Through Service
+                Innovation, And Has Changed Its Traditional Decoration Model Through Technological Innovation.
+            </p>
+            <p class="text-en">ith A Unique Service Orientation, The Company Continuously Explores And Innovates In The Fast-growing Decoration
+                Industry In A Very Short Period Of Time. It Focuses On China's Us Space Planning And One-stop Service For
+                Decoration And Soft-packing To Integrate Innovations And Redefine The Field Of Decoration In China Meiye.
+                The New Benchmark --- A New Model Of Whole Shop Output!</p>
+
+            <a href="./aboutus.html" target="_self">
+                <div style="margin-top: 50px" class="moreflag"></div>
+            </a>
+        </div>
+        <div class="aboutus-col-right">
+            <img src="./image/aboutus.jpg" alt="">
+        </div>
+    </div>
+    <div class="layout-content case-panel cl">
+        <div class="panel-title text-c">
+            <span class="font-red">案例</span>
+            <span class="pr-10">展示</span>
+            <span>CASE</span>
+        </div>
+        <div class="casetype">
+            <span class="casetype-item">美容（200）</span>
+            <span class="casetype-item">美发（200）</span>
+            <span class="casetype-item">综合店（200）</span>
+            <a href="./case.html" target="_self">
+                <span class="allcase"></span>
+            </a>
+        </div>
+        <div class="case-boxlist cl">
+            <div class="case-item">
+                <img class="case-img" src="./image/hcase1.jpg" alt="">
+                <div class="caseitem-text">
+                    <p>ORIENTAL BEAUTY</p>
+                    <p class="mt-10">武汉·艺丝启度</p>
+                </div>
+            </div>
+            <div class="case-item">
+                <img class="case-img" src="./image/hcase2.jpg" alt="">
+                <div class="caseitem-text">
+                    <p>ORIENTAL BEAUTY</p>
+                    <p class="mt-10">武汉·艺丝启度</p>
+                </div>
+            </div>
+            <div class="case-item">
+                <img class="case-img" src="./image/hcase3.jpg" alt="">
+                <div class="caseitem-text">
+                    <p>ORIENTAL BEAUTY</p>
+                    <p class="mt-10">武汉·艺丝启度</p>
+                </div>
+            </div>
+            <div class="case-item">
+                <img class="case-img" src="./image/hcase4.jpg" alt="">
+                <div class="caseitem-text">
+                    <p>ORIENTAL BEAUTY</p>
+                    <p class="mt-10">武汉·艺丝启度</p>
+                </div>
+            </div>
+            <div class="case-item">
+                <img class="case-img" src="./image/hcase5.jpg" alt="">
+                <div class="caseitem-text">
+                    <p>ORIENTAL BEAUTY</p>
+                    <p class="mt-10">武汉·艺丝启度</p>
+                </div>
+            </div>
+            <div class="case-item">
+                <img class="case-img" src="./image/hcase6.jpg" alt="">
+                <div class="caseitem-text">
+                    <p>ORIENTAL BEAUTY</p>
+                    <p class="mt-10">武汉·艺丝启度</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout-content team-panel cl">
+        <div class="panel-title team-title text-c">
+            <span>核心</span>
+            <span class="font-red pr-10">团队</span>
+            <span>TEAM</span>
+        </div>
+        <div class="team-boxlist cl">
+            <div class="team-top">
+                <p>东申一美拥有专业的设计团队,现有武汉三站d多个运营广场， 50余名设计师。200多名施工人员服务全国消费者。</p>
+                <a href="./team.html" target="_self">
+                    <div class="moreflag teammore"></div>
+                </a>
+            </div>
+            <div class="team-item">
+                <div class="team-img-box">
+                    <img class="team-img" src="./image/huser1.jpg" alt="">
+                </div>
+                <div class="team-img-content" style="display:none;">
+                    <p class="team-name">ANDY</p>
+                    <p class="team-job">效果图设计师</p>
+                    <p class="team-year">从事室内设计8年</p>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="team-img-box">
+                    <img class="team-img" src="./image/huser2.jpg" alt="">
+                </div>
+                <div class="team-img-content" style="display:none;">
+                    <p class="team-name">ANDY</p>
+                    <p class="team-job">效果图设计师</p>
+                    <p class="team-year">从事室内设计8年</p>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="team-img-box">
+                    <img class="team-img" src="./image/huser3.jpg" alt="">
+                </div>
+                <div class="team-img-content" style="display:none;">
+                    <p class="team-name">ANDY</p>
+                    <p class="team-job">效果图设计师</p>
+                    <p class="team-year">从事室内设计8年</p>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="team-img-box">
+                    <img class="team-img" src="./image/huser4.jpg" alt="">
+                </div>
+                <div class="team-img-content" style="display:none;">
+                    <p class="team-name">ANDY</p>
+                    <p class="team-job">效果图设计师</p>
+                    <p class="team-year">从事室内设计8年</p>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="team-img-box">
+                    <img class="team-img" src="./image/huser5.jpg" alt="">
+                </div>
+                <div class="team-img-content" style="display:none;">
+                    <p class="team-name">ANDY</p>
+                    <p class="team-job">效果图设计师</p>
+                    <p class="team-year">从事室内设计8年</p>
+                </div>
+            </div>
+            <div class="team-item">
+                <div class="team-img-box">
+                    <img class="team-img" src="./image/huser6.jpg" alt="">
+                </div>
+                <div class="team-img-content" style="display:none;">
+                    <p class="team-name">ANDY</p>
+                    <p class="team-job">效果图设计师</p>
+                    <p class="team-year">从事室内设计8年</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layout-content partner-panel">
+        <div class="panel-title partner-title text-c">
+            <span>合作</span>
+            <span class="font-red pr-10">伙伴</span>
+            <span>PARTNER</span>
+        </div>
+        <div class="partner-boxlist cl">
+            <div class="partner-item">
+                <div class="partner-box">
+                    <img class="partner-img" src="./image/huoban1.jpg" alt="">
+                </div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-box">
+                    <img class="partner-img" src="./image/huoban2.jpg" alt="">
+                </div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-box">
+                    <img class="partner-img" src="./image/huoban3.jpg" alt="">
+                </div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-box">
+                    <img class="partner-img" src="./image/huoban4.jpg" alt="">
+                </div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-box">
+                    <img class="partner-img" src="./image/huoban5.jpg" alt="">
+                </div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-box">
+                    <img class="partner-img" src="./image/huoban6.jpg" alt="">
+                </div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-box">
+                    <img class="partner-img" src="./image/huoban7.jpg" alt="">
+                </div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-box">
+                    <img class="partner-img" src="./image/huoban8.jpg" alt="">
+                </div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-box">
+                    <img class="partner-img" src="./image/huoban9.jpg" alt="">
+                </div>
+            </div>
+            <div class="partner-item">
+                <div class="partner-box">
+                    <a href="./partner.html" target="_self">
+                        <img class="partner-img" src="./image/huobanmore.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="layout-content news-panel cl">
+        <div class="panel-title news-title">
+            <span class="font-red">最新</span>
+            <span class="pr-10">动态</span>
+            <span class="new-subtitle">
+                <p>LATEST NEWS</p>
+                <P>东申一美 重新定义美业空间新标准</P>
+            </span>
+        </div>
+        <div class="new-col-left">
+            <img src="./image/hnews.jpg" alt="">
+        </div>
+        <div class="new-col-right">
+            <div>
+                <div class="news-item">
+                    <div class="newx-box">
+                        <div class="news-time">2018/03/09</div>
+                        <div class="news-content">
+                            <div class="news-contitle">东申一美 重新定义美业空间新标准</div>
+                            <div class="news-text">东申一美 重新定义美业空间新标准</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="newx-box">
+                        <div class="news-time">2018/03/09</div>
+                        <div class="news-content">
+                            <div class="news-contitle">东申一美 重新定义美业空间新标准</div>
+                            <div class="news-text">东申一美 重新定义美业空间新标准</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="newx-box">
+                        <div class="news-time">2018/03/09</div>
+                        <div class="news-content">
+                            <div class="news-contitle">东申一美 重新定义美业空间新标准</div>
+                            <div class="news-text">东申一美 重新定义美业空间新标准</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="newx-box">
+                        <div class="news-time">2018/03/09</div>
+                        <div class="news-content">
+                            <div class="news-contitle">东申一美 重新定义美业空间新标准</div>
+                            <div class="news-text">东申一美 重新定义美业空间新标准</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./news.html" target="_self">
+                <div style="margin-top: 28px" class="moreflag"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="layout-footer">
+        <div class="footer-content cl">
+            <div class="footer-logo">
+                <img src="./image/logo-footer.png" alt="">
+            </div>
+            <div class="footer-address">
+                <div class="footer-qrcode">
+                    <img src="./image/QRcode.png" alt="">
+                </div>
+                <div class="address-text">
+                    <p>tel：189-7107-7966</p>
+                    <p>e-mail：297170659@qq.com</p>
+                    <p>Addess：武汉市硚口区江城壹号21栋</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <ul class="navbox">
+                <a href="./index.html" target="_self">
+                    <li class="navitem navselected">首页</li>
+                </a>
+                <a href="./aboutus.html" target="_self">
+                    <li class="navitem">关于我们</li>
+                </a>
+                <a href="./news.html" target="_self">
+                    <li class="navitem">最新动态</li>
+                </a>
+                <a href="./case.html" target="_self">
+                    <li class="navitem">案例展示</li>
+                </a>
+                <a href="./price.html" target="_self">
+                    <li class="navitem">报价系统</li>
+                </a>
+                <a href="./services.html" target="_self">
+                    <li class="navitem">服务流程</li>
+                </a>
+                <a href="./team.html" target="_self">
+                    <li class="navitem">核心团队</li>
+                </a>
+                <a href="./contactus.html" target="_self">
+                    <li class="navitem">联系我们</li>
+                </a>
+            </ul>
+        </div>
+        <div class=" footer-copy ">
+            版权所有
+            <span class="pl-20 "></span>copyright(c)2018
+            <span class="pl-20 "></span>武汉东申一美装饰工程有限公司
+            <span class="pl-20 "></span>鄂ICP备11014743号
+        </div>
+    </div>
+    <script src="./js/jquery-2.1.4.min.js "></script>
+    <script src="./js/layui/layui.js "></script>
+    <script src="./js/jquery.blockUI.min.js "></script>
     <script>
-        //config的设置是全局的
-        layui.config({
-            base: '/js/extend/' //假设这是你存放拓展模块的根目录
-        }).extend({
-            //设定模块别名
-            mask: 'mask' //如果 mymod.js 是在根目录，也可以不用设定别名
-        });
-        layui.use(['carousel', 'mask'], function () {
-            var carousel = layui.carousel,
-                mask = layui.mask;
-            //建造实例
+        // 轮播
+        layui.use('carousel', function () {
+            var carousel = layui.carousel;
+            //建造实例 轮播
             carousel.render({
                 elem: '#layui-carousel',
                 width: '100%', //设置容器宽度
-                height: '540px', //设置容器高度
+                height: '680px', //设置容器高度
                 arrow: 'always', //始终显示箭头
                 autoplay: true, //自动播放
                 interval: 5000, //切换间隔
                 indicator: 'inside' //指示器位置
             });
-            mask.hello('World!');
         });
         $(function () {
             $.blockUI.defaults.overlayCSS = {
@@ -150,53 +431,97 @@
                 opacity: 0.6,
                 cursor: 'default'
             }
-            $('#blockButton1').hover(function () {
-                $('div.blockUI-demo').block({
-                    message: $(".blockUI-content"),
+
+            // 遮罩
+            $('.team-img-box').hover(function () {
+                $(this).block({
+                    message: $(this).next(".team-img-content "),
                     css: {
-                        border: '3px solid #a00',
-                        cursor: 'default'
+                        border: '4px solid rgba(255, 255, 255,0.6)',
+                        backgroundColor: 'transparent',
+                        padding: '0',
+                        cursor: 'pointer',
+                        color: '#FFFFFF',
+                        width: '190px',
+                        height: '90px',
+                        left: '41px'
                     }
                 });
             }, function () {
-                $('div.blockUI-demo').unblock();
-            });
-            $('#blockButton2').click(function () {
-                $('div.blockUI-demo').block({
-                    message: $(".blockUI-content"),
-                    css: {
-                        border: '3px solid #a00',
-                        cursor: 'default'
-                    }
-                });
+                $(this).unblock();
             });
 
-            $('#unblockButton').click(function () {
-                $('div.blockUI-demo').unblock();
-            });
+            // 动画
             $('#animatedadd').click(function () {
-                $(".js-fadeInRight").addClass("animated fadeInRight");
-                $(".js-fadeInUp").addClass("animated fadeInUp");
-                $(".js-fadeInLeft").addClass("animated fadeInLeft");
+                $(".js-fadeInRight ").addClass("animated fadeInRight ");
+                $(".js-fadeInUp ").addClass("animated fadeInUp ");
+                $(".js-fadeInLeft ").addClass("animated fadeInLeft ");
             });
 
             $(window).scroll(function (event) {
                 var top = $(window).scrollTop();
                 if (top > 20) {
-                    $(".js-fadeInRight").addClass("animated fadeInRight");
+                    $(".js-fadeInRight ").addClass("animated fadeInRight ");
                     setTimeout(function () {
-                        // $(".js-fadeInRight").removeClass("animated fadeInRight");
+                        // $(".js-fadeInRight ").removeClass("animated fadeInRight ");
                     }, 1000);
-                    $(".js-fadeInUp").addClass("animated fadeInUp");
+                    $(".js-fadeInUp ").addClass("animated fadeInUp ");
                     setTimeout(function () {
-                        // $(".js-fadeInUp").removeClass("animated fadeInUp");
+                        // $(".js-fadeInUp ").removeClass("animated fadeInUp ");
                     }, 1000);
-                    $(".js-fadeInLeft").addClass("animated fadeInLeft");
+                    $(".js-fadeInLeft ").addClass("animated fadeInLeft ");
                     setTimeout(function () {
-                        // $(".js-fadeInLeft").removeClass("animated fadeInLeft");
+                        // $(".js-fadeInLeft ").removeClass("animated fadeInLeft ");
                     }, 1000);
                 }
 
+            });
+
+
+            // 设置宽高比
+            function setRatio(dom, ratio) {
+                var h = dom.outerWidth() * (1 / ratio);
+                var borderWid = parseInt(dom.css("border-top-width")) + parseInt(dom.css(
+                    "border-bottom-width")); // 考虑边框的宽度
+                dom.css("height", h + borderWid);
+            }
+            // 设置团队图片高度
+            setRatio($('.case-img'), (631 / 473));
+
+            // 首页案例hover
+            $('.case-img').hover(function () {
+                $(this).next('.caseitem-text').css({
+                    color: '#FF0000'
+                })
+            }, function () {
+                $(this).next('.caseitem-text').css({
+                    color: '#000000'
+                })
+            });
+
+            // news循环
+            setInterval(function () {
+                var dom = $('.news-panel .news-item');
+                var index = $('.news-panel .news-item.is-active').index();
+                if (index == -1) {
+                    index = 0;
+                    $('.news-panel .news-item').removeClass("is-active ").eq(index).addClass(
+                        "is-active ");
+                } else {
+                    $('.news-panel .news-item').eq(index).removeClass("is-active ");
+                    if (index == 3) {
+                        index = 0
+                    } else {
+                        index++
+                    }
+                    $('.news-panel .news-item').eq(index).addClass("is-active ");
+                }
+            }, 1000)
+            // news hover
+            $('.news-item').hover(function () {
+                $(this).addClass('is-active');
+            }, function () {
+                $(this).removeClass('is-active');
             });
         })
     </script>

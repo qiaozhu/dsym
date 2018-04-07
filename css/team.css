@@ -1,0 +1,191 @@
+.banner-panel>div {
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.lender-panel {
+    margin-top: 90px;
+    overflow: hidden;
+}
+
+.lender-col-left {
+    width: 50%;
+    float: left;
+}
+
+.lender-col-right {
+    width: 50%;
+    float: left;
+}
+
+.lender-col-right .lender-text1 {
+    font-size: 18.5px;
+    color: #000;
+    text-transform: uppercase;
+    opacity: 0.4;
+    margin-top: 130px;
+}
+
+.lender-col-right .lender-text2 {
+    font-size: 50.5px;
+    color: #727272;
+    margin-top: 20px;
+}
+
+.lender-col-right .lender-text3 {
+    font-size: 50.5px;
+    color: #727272;
+    font-family: serif;
+}
+
+.lender-col-right .lender-text4 {
+    font-size: 20px;
+    color: #504f4f;
+    line-height: 36px;
+}
+
+.mt-67 {
+    margin-top: 67px;
+}
+
+.lender-col-right .lender-text5 {
+    font-size: 10px;
+    text-transform: uppercase;
+    opacity: 0.3;
+    line-height: 14px;
+}
+
+.lender-col-right .mt-40 {
+    margin-top: 40px;
+}
+
+.lender-col-right .lender-text6 {
+    font-size: 23.5px;
+    opacity: 0.6;
+    line-height: 36px;
+    margin-top: 50px;
+}
+
+.lender-col-right .lender-text7 {
+    font-size: 23.5px;
+    line-height: 36px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.lender-col-right .lender-n {
+    font-size: 16px;
+    color: #070707;
+    position: relative;
+    top: -3px;
+    opacity: 0.6;
+    padding-right: 5px;
+}
+
+.lender-panel .lender-col-right img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.team-page-title {
+    font-size: 30px;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: right;
+    color: #787878;
+}
+
+.team-panel .team-img-content {
+    line-height: 1.3;
+    cursor: pointer !important;
+}
+
+.team-img-content .team-name {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 7px;
+}
+
+.team-img-content .team-job {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.team-img-content .team-year {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.team-panel .team-title {
+    margin-bottom: 52px;
+}
+
+.team-panel .team-item {
+    width: 25%;
+    float: left;
+}
+
+.team-panel .team-img {
+    width: 100%;
+}
+
+.team-join {
+    font-size: 15px;
+    color: #787878;
+    text-align: center;
+    margin: 80px 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.team-member-box {
+    padding: 70px 120px;
+    text-align: left;
+    clear: both;
+    position: relative;
+}
+
+.member-log img {
+    width: 151px;
+    height: 75px;
+}
+
+.member-box-left {
+    float: left;
+}
+
+.member-box-right {
+    float: left;
+    width: 630px;
+    padding-left: 40px;
+    line-height: 38px;
+    font-size: 15px;
+}
+
+.member-label {
+    font-weight: 700;
+}
+
+.member-case-title {
+    font-weight: 700;
+}
+
+.member-case-item {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.member-close {
+    width: 78px;
+    height: 78px;
+    top: 50px;
+    right: 20px;
+    position: absolute;
+    background-image: url(../image/close.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

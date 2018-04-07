@@ -1,0 +1,86 @@
+.banner-panel>div {
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.services-title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #555555;
+    text-indent: 60px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.title-icon1 {
+    background-image: url(../image/services1.png);
+    background-repeat: no-repeat;
+}
+
+.title-icon2 {
+    background-image: url(../image/services2.png);
+    background-repeat: no-repeat;
+}
+
+.title-icon3 {
+    background-image: url(../image/services3.png);
+    background-repeat: no-repeat;
+}
+
+.services-item p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #3f3f3f;
+    padding-left: 45px;
+}
+
+.services-timetitle {
+    font-size: 27px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.services-timeitem {
+    width: 239px;
+    float: left;
+    border-left: 1px solid #333;
+    text-align: center;
+}
+
+.services-timeitem:last-child {
+    width: 238px;
+    border-right: 1px solid #333;
+}
+
+.mianji {
+    font-size: 60px;
+    float: left;
+    width: 56%;
+    text-align: right;
+    font-weight: 700;
+}
+
+.danwei {
+    font-size: 26px;
+    float: left;
+    width: 44%;
+    text-align: left;
+    padding-top: 8px;
+}
+
+.day {
+    width: 100%;
+    clear: both;
+    padding-top: 6px;
+    font-size: 22px;
+}
+
+.services-timetips {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}

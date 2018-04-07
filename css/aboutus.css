@@ -1,0 +1,113 @@
+.banner-panel>div {
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.aboutus-panel {
+    margin-top: 90px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    border-bottom: 1px dashed #d7d7d7;
+}
+
+.aboutus-title {
+    margin-top: 20px;
+}
+
+.aboutus-col-left {
+    width: 50%;
+    float: left;
+}
+
+.aboutus-col-right {
+    width: 50%;
+    float: left;
+}
+
+.moreflag {
+    width: 183px;
+    height: 43px;
+    background-image: url('../image/moreflag.png');
+    cursor: pointer;
+}
+
+.about-subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 5px;
+}
+
+.aboutus-panel .text-ch {
+    width: 505px;
+    line-height: 26px;
+}
+
+.aboutus-panel .text-en {
+    width: 511px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "宋体";
+}
+
+.aboutus-panel .aboutus-col-right img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.position-panel {
+    padding: 80px 0;
+}
+
+.position-col-left {
+    width: 50%;
+    float: left;
+}
+
+.position-bg {
+    width: 437px;
+    background: url(../image/dot.png) repeat;
+    margin-top: 75px;
+    margin-left: 70px;
+}
+
+.position-col-left img {
+    width: 426px;
+    position: relative;
+    left: -70px;
+    top: -75px;
+}
+
+.position-col-right {
+    width: 50%;
+    float: left;
+}
+
+.position-panel .text-ch {
+    line-height: 24px;
+    color: #333333;
+}
+
+.position-panel .text-en {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: "宋体";
+    color: #979797;
+}
+
+.position-panel .text-ch.bot {
+    color: #979797;
+}
+
+.posi-iconitem {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.posi-iconitem img {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+}

@@ -1,0 +1,37 @@
+.banner-panel>div {
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.partner-panel {
+    width: 1200px;
+    margin-bottom: 100px;
+}
+
+.partner-panel .partner-title {
+    margin-top: 110px;
+    margin-bottom: 56px;
+}
+
+.partner-panel .partner-boxlist {
+    margin: -8px;
+}
+
+.partner-panel .partner-box {
+    border: 5px solid #999999;
+    box-sizing: border-box;
+    margin: 8px;
+}
+
+.partner-panel .partner-item {
+    width: 20%;
+    float: left;
+}
+
+.partner-panel .partner-img {
+    width: 217px;
+    height: 88px;
+}

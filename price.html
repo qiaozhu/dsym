@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>东申一美</title>
+    <meta name="description" content="东申一美">
+    <meta name="keywords" content="东申一美">
+    <meta name="author" content="qz">
+
+    <link href="./image/icon.png" rel="icon" type="image/x-icon">
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/hover.min.css" rel="stylesheet" />
+    <link href="./css/animate.css" rel="stylesheet" />
+    <link href="./js/layui/css/layui.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/price.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="layout-header">
+        <div class="header-top cl">
+            <div class="header-logo">
+                <img src="./image/logo.png" alt="">
+            </div>
+            <div class="header-slogan">
+                <img src="./image/topkouhao.png" alt="">
+            </div>
+            <div class="header-tel">
+                <img src="./image/toptel.png" alt="">
+            </div>
+        </div>
+        <div class="header-nav">
+            <ul class="navbox">
+                <a href="./index.html" target="_self">
+                    <li class="navitem">首页</li>
+                </a>
+                <a href="./aboutus.html" target="_self">
+                    <li class="navitem">关于我们</li>
+                </a>
+                <a href="./news.html" target="_self">
+                    <li class="navitem">最新动态</li>
+                </a>
+                <a href="./case.html" target="_self">
+                    <li class="navitem">案例展示</li>
+                </a>
+                <a href="./price.html" target="_self">
+                    <li class="navitem navselected">报价系统</li>
+                </a>
+                <a href="./services.html" target="_self">
+                    <li class="navitem">服务流程</li>
+                </a>
+                <a href="./team.html" target="_self">
+                    <li class="navitem">核心团队</li>
+                </a>
+                <a href="./contactus.html" target="_self">
+                    <li class="navitem">联系我们</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="banner-panel">
+        <div style="background-image:url('./image/banner-news.jpg')"></div>
+    </div>
+    <div id="maskContent">
+        <div class="layout-content price-panel cl">
+            <div class="model-title text-c">
+                <span>报价系统</span>
+            </div>
+            <div class="layui-row layui-col-space18 mt-20">
+                <div class="layui-col-xs12 layui-col-sm12 layui-col-md4">
+                    <div class="price-title pl-20">
+                        设计费
+                        <span class="font-red font-size12">今天已有1200位业主获取了设计预算</span>
+                    </div>
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item mt-35">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">
+                                    <span class="font-red pr-5">*</span>所在城市：</label>
+                                <div class="layui-input-inline" style="width:110px">
+                                    <select name="province" required lay-verify="required" lay-verType="tips">
+                                        <option value="">省/市</option>
+                                        <option value="010">湖北</option>
+                                        <option value="021">湖南</option>
+                                        <option value="0571">广东</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <div class="layui-input-inline" style="width:110px">
+                                    <select name="city" required lay-verify="required" lay-verType="tips">
+                                        <option value="">市/地区</option>
+                                        <option value="010">武汉</option>
+                                        <option value="021">长沙</option>
+                                        <option value="0571">广州</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item mt-20">
+                            <label class="layui-form-label">
+                                <span class="font-red pr-5">*</span>设计面积：</label>
+                            <div class="layui-input-inline" style="width:244px">
+                                <input type="text" name="title" required lay-verify="required" lay-verType="tips" placeholder="输入你的面积(m²)" autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label pt-9">设计档次：</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="grade" value="1" title="低">
+                                <input type="radio" name="grade" value="2" title="中" checked>
+                                <input type="radio" name="grade" value="3" title="高">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <button class="layui-btn calcbtn" lay-submit lay-filter="priceForm1">开始计算</button>
+                            <p class="pl-40 pt-10 font-gray">为了您的权益，你的隐私将被严格保密 </p>
+                        </div>
+                    </form>
+                    <div class="calcResult1" style="display: none;">
+                        <div class="resultClose"></div>
+                        <div class="pl-20">为您定制的设计费：</div>
+                        <div class="resultul">
+                            <div class="result-item">
+                                <span class="font-weight">所在城市：</span>湖北省武汉市</div>
+                            <div class="result-item">
+                                <span class="font-weight"></span>设计面积：</span>300m²</div>
+                            <div class="result-item">
+                                <span class="font-weight"></span>设计档次：</span>高</div>
+                            <div class="result-item">
+                                <span class="font-weight"></span>总价：</span>20000元</div>
+                        </div>
+                        <div class="text-c pt-20">详情请致电东申一美 项目部 189-7107-7986(任)</div>
+                    </div>
+                </div>
+                <div class="layui-col-xs12 layui-col-sm12 layui-col-md4">
+                    <div class="price-title pl-20">
+                        软装费
+                        <span class="font-red font-size12">今天已有1200位业主获取了软装预算</span>
+                    </div>
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item mt-35">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">
+                                    <span class="font-red pr-5">*</span>所在城市：</label>
+                                <div class="layui-input-inline" style="width:110px">
+                                    <select name="province" required lay-verify="required" lay-verType="tips">
+                                        <option value="">省/市</option>
+                                        <option value="010">湖北</option>
+                                        <option value="021">湖南</option>
+                                        <option value="0571">广东</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <div class="layui-input-inline" style="width:110px">
+                                    <select name="city" required lay-verify="required" lay-verType="tips">
+                                        <option value="">市/地区</option>
+                                        <option value="010">武汉</option>
+                                        <option value="021">长沙</option>
+                                        <option value="0571">广州</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item mt-20">
+                            <label class="layui-form-label">
+                                <span class="font-red pr-5">*</span>软装面积：</label>
+                            <div class="layui-input-inline" style="width:244px">
+                                <input type="text" name="title" required lay-verify="required" lay-verType="tips" placeholder="输入你的面积(m²)" autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label pt-9">软装档次：</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="grade" value="1" title="低">
+                                <input type="radio" name="grade" value="2" title="中" checked>
+                                <input type="radio" name="grade" value="3" title="高">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <button class="layui-btn calcbtn" lay-submit lay-filter="priceForm2">开始计算</button>
+                            <p class="pl-40 pt-10 font-gray">为了您的权益，你的隐私将被严格保密 </p>
+                        </div>
+                    </form>
+                    <div class="calcResult1" style="display: none;">
+                        <div class="resultClose"></div>
+                        <div class="pl-20">为您定制的软装费：</div>
+                        <div class="resultul">
+                            <div class="result-item">
+                                <span class="font-weight">所在城市：</span>湖北省武汉市</div>
+                            <div class="result-item">
+                                <span class="font-weight"></span>软装面积：</span>300m²</div>
+                            <div class="result-item">
+                                <span class="font-weight"></span>软装档次：</span>高</div>
+                            <div class="result-item">
+                                <span class="font-weight"></span>总价：</span>20000元</div>
+                        </div>
+                        <div class="text-c pt-20">详情请致电东申一美 项目部 189-7107-7986(任)</div>
+                    </div>
+                </div>
+                <div class="layui-col-xs12 layui-col-sm12 layui-col-md4">
+                    <div class="price-title pl-20">
+                        施工费
+                        <span class="font-red font-size12">今天已有1200位业主获取了施工预算</span>
+                    </div>
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item mt-35">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">
+                                    <span class="font-red pr-5">*</span>所在城市：</label>
+                                <div class="layui-input-inline" style="width:110px">
+                                    <select name="province" required lay-verify="required" lay-verType="tips">
+                                        <option value="">省/市</option>
+                                        <option value="010">湖北</option>
+                                        <option value="021">湖南</option>
+                                        <option value="0571">广东</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <div class="layui-input-inline" style="width:110px">
+                                    <select name="city" required lay-verify="required" lay-verType="tips">
+                                        <option value="">市/地区</option>
+                                        <option value="010">武汉</option>
+                                        <option value="021">长沙</option>
+                                        <option value="0571">广州</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item mt-20">
+                            <label class="layui-form-label">
+                                <span class="font-red pr-5">*</span>施工面积：</label>
+                            <div class="layui-input-inline" style="width:244px">
+                                <input type="text" name="area" required lay-verify="required" lay-verType="tips" placeholder="输入你的面积(m²)" autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label pt-9">施工档次：</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="grade" value="1" title="低">
+                                <input type="radio" name="grade" value="2" title="中" checked>
+                                <input type="radio" name="grade" value="3" title="高">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <button class="layui-btn calcbtn" lay-submit lay-filter="priceForm3">开始计算</button>
+                            <p class="pl-40 pt-10 font-gray">为了您的权益，你的隐私将被严格保密 </p>
+                        </div>
+                    </form>
+                    <div class="calcResult1" style="display: none;">
+                        <div class="resultClose"></div>
+                        <div class="pl-20">为您定制的施工费：</div>
+                        <div class="resultul">
+                            <div class="result-item">
+                                <span class="font-weight">所在城市：</span>湖北省武汉市</div>
+                            <div class="result-item">
+                                <span class="font-weight"></span>施工面积：</span>300m²</div>
+                            <div class="result-item">
+                                <span class="font-weight"></span>施工档次：</span>高</div>
+                            <div class="result-item">
+                                <span class="font-weight"></span>总价：</span>20000元</div>
+                        </div>
+                        <div class="text-c pt-20">详情请致电东申一美 项目部 189-7107-7986(任)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout-footer">
+        <div class="footer-content cl">
+            <div class="footer-logo">
+                <img src="./image/logo-footer.png" alt="">
+            </div>
+            <div class="footer-address">
+                <div class="footer-qrcode">
+                    <img src="./image/QRcode.png" alt="">
+                </div>
+                <div class="address-text">
+                    <p>tel：189-7107-7966</p>
+                    <p>e-mail：297170659@qq.com</p>
+                    <p>Addess：武汉市硚口区江城壹号21栋</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <ul class="navbox">
+                <a href="./index.html" target="_self">
+                    <li class="navitem">首页</li>
+                </a>
+                <a href="./aboutus.html" target="_self">
+                    <li class="navitem">关于我们</li>
+                </a>
+                <a href="./news.html" target="_self">
+                    <li class="navitem">最新动态</li>
+                </a>
+                <a href="./case.html" target="_self">
+                    <li class="navitem">案例展示</li>
+                </a>
+                <a href="./price.html" target="_self">
+                    <li class="navitem navselected">报价系统</li>
+                </a>
+                <a href="./services.html" target="_self">
+                    <li class="navitem">服务流程</li>
+                </a>
+                <a href="./team.html" target="_self">
+                    <li class="navitem">核心团队</li>
+                </a>
+                <a href="./contactus.html" target="_self">
+                    <li class="navitem">联系我们</li>
+                </a>
+            </ul>
+        </div>
+        <div class="footer-copy">
+            版权所有
+            <span class="pl-20"></span>copyright(c)2018
+            <span class="pl-20"></span>武汉东申一美装饰工程有限公司
+            <span class="pl-20"></span>鄂ICP备11014743号
+        </div>
+    </div>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/layui/layui.js"></script>
+    <script src="./js/jquery.blockUI.min.js"></script>
+    <script>
+        layui.use('form', function () {
+            var form = layui.form;
+            $.blockUI.defaults.overlayCSS = {
+                backgroundColor: '#000',
+                opacity: 0.9,
+                cursor: 'default'
+            }
+            //设计费提交
+            form.on('submit(priceForm1)', function (data) {
+                console.log(JSON.stringify(data.field));
+                $('#maskContent').block({
+                    message: $(".calcResult1"),
+                    css: {
+                        backgroundColor: 'transparent',
+                        border: 'none',
+                        cursor: 'default',
+                        marginTop: '-100px',
+                        padding: '0',
+                        color: '#FFFFFF',
+                        width: '320px',
+                        height: '250px',
+                        left: '41px',
+                        textAlign: 'left'
+                    }
+                });
+                return false;
+            });
+            //软装费提交
+            form.on('submit(priceForm2)', function (data) {
+                console.log(JSON.stringify(data.field));
+                return false;
+            });
+            //施工费提交
+            form.on('submit(priceForm3)', function (data) {
+                console.log(JSON.stringify(data.field));
+                return false;
+            });
+        });
+        $(function () {
+            $('.resultClose').click(function () {
+                $('#maskContent').unblock();
+            });
+        })
+    </script>
+</body>
+
+</html>

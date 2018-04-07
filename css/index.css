@@ -1,0 +1,314 @@
+/* aboutus */
+
+.aboutus-panel {
+    margin-top: 90px;
+    overflow: hidden;
+}
+
+.aboutus-title {
+    margin-top: 20px;
+}
+
+.aboutus-col-left {
+    width: 50%;
+    float: left;
+}
+
+.aboutus-col-right {
+    width: 50%;
+    float: left;
+}
+
+.moreflag {
+    width: 183px;
+    height: 43px;
+    background-image: url('../image/moreflag.png');
+    cursor: pointer;
+}
+
+.aboutus-panel .text-ch {
+    width: 505px;
+    line-height: 30px;
+}
+
+.aboutus-panel .text-en {
+    width: 511px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "宋体";
+}
+
+.aboutus-panel .aboutus-col-right img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* case */
+
+.case-panel {
+    width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.case-panel .casetype {
+    line-height: 40px;
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.case-panel .casetype-item {
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.case-panel .allcase {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    width: 131px;
+    height: 18px;
+    background-image: url(../image/casemore.png);
+    cursor: pointer;
+}
+
+.case-boxlist {
+    margin: -16px;
+}
+
+.case-boxlist .case-item {
+    width: 33.33333333%;
+    float: left;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.case-boxlist .case-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.case-boxlist .casetype-item:hover {
+    color: #FF0000;
+}
+
+.case-panel .caseitem-text {
+    margin: 30px auto 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+/* team */
+
+.team-panel .team-img-content {
+    line-height: 1.3;
+    cursor: pointer !important;
+}
+
+.team-img-content .team-name {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 7px;
+}
+
+.team-img-content .team-job {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.team-img-content .team-year {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.team-panel .team-title {
+    margin-bottom: 52px;
+}
+
+.team-boxlist {
+    margin: -8px;
+}
+
+.team-panel .team-top {
+    width: 592px;
+    height: 300px;
+    margin: 8px;
+    background: #ebebeb;
+    line-height: 1.6;
+    float: left;
+}
+
+.team-panel .teammore {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.team-panel .team-item {
+    width: 25%;
+    float: left;
+}
+
+.team-img-box {
+    margin: 8px;
+}
+
+.team-panel .team-top>p:first-child {
+    padding: 0 50px;
+    padding-top: 80px;
+    line-height: 26px;
+}
+
+.team-panel .team-img {
+    width: 100%;
+    height: 300.03px;
+}
+
+/* partenr */
+
+.partner-panel {
+    width: 1200px;
+}
+
+.partner-panel .partner-title {
+    margin-top: 110px;
+    margin-bottom: 56px;
+}
+
+.partner-panel .partner-boxlist {
+    margin: -8px;
+}
+
+.partner-panel .partner-box {
+    border: 5px solid #999999;
+    box-sizing: border-box;
+    margin: 8px;
+}
+
+.partner-panel .partner-item {
+    width: 20%;
+    float: left;
+}
+
+.partner-panel .partner-item:last-child {
+    cursor: pointer;
+}
+
+.partner-panel .partner-img {
+    width: 217px;
+    height: 88px;
+}
+
+/* news */
+
+.news-panel {
+    margin-bottom: 120px;
+}
+
+.news-panel .news-title {
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.news-panel .new-subtitle {
+    font-size: 13px;
+    display: inline-block;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.new-col-left {
+    width: 50%;
+    float: left;
+}
+
+.new-col-left img {
+    width: 546px;
+    height: 465px;
+}
+
+.new-col-right {
+    width: 50%;
+    float: left;
+}
+
+.news-item {
+    height: 76px;
+    border-top: 2px solid #EEEEEE;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.news-item:last-child {
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.newx-box {
+    height: 76px;
+}
+
+.news-item.is-active .newx-box {
+    background: #EEEEEE;
+}
+
+.news-time {
+    width: 180px;
+    float: left;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.news-content {
+    float: left;
+    width: 400px;
+    overflow: hidden;
+}
+
+.news-contitle {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* blockUi */
+
+.blockUI.blockOverlay {
+    cursor: pointer !important;
+}
+
+.blockUI.blockMsg.blockElement {
+    top: 50% !important;
+}
+
+.news-text {
+    line-height: 20px;
+    font-size: 12px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+[class^="hvr-"] {
+    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background: #e1e1e1;
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
