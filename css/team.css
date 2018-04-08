@@ -143,7 +143,7 @@
 }
 
 .team-member-box {
-    padding: 70px 120px;
+    padding: 70px;
     text-align: left;
     clear: both;
     position: relative;
@@ -156,6 +156,12 @@
 
 .member-box-left {
     float: left;
+    width: 370px;
+}
+
+.member-box-left img {
+    width: 100%;
+    height: 385.47px;
 }
 
 .member-box-right {

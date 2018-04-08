@@ -15,6 +15,10 @@
     line-height: 50px;
 }
 
+.services-content .flowimg {
+    width: 100%;
+}
+
 .title-icon1 {
     background-image: url(../image/services1.png);
     background-repeat: no-repeat;

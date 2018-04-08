@@ -106,7 +106,7 @@
                         <p class="team-year">从事室内设计8年</p>
                     </div>
                     <!-- 详情层 -->
-                    <div class="team-member-box" style="display:none;">
+                    <div class="team-member-box cl" style="display:none;">
                         <div class="member-box-left">
                             <img class="member-img" src="./image/huser1.jpg" alt="">
                         </div>
@@ -158,6 +158,36 @@
                                 <div class="member-case-item">
                                     东申一美专营店
                                 </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
+                                <div class="member-case-item">
+                                    东申一美专营店
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -173,7 +203,7 @@
                         <p class="team-year">从事室内设计8年</p>
                     </div>
                     <!-- 详情层 -->
-                    <div class="team-member-box" style="display:none;">
+                    <div class="team-member-box cl" style="display:none;">
                         <div class="member-box-left">
                             <img class="member-img" src="./image/huser1.jpg" alt="">
                         </div>
@@ -240,7 +270,7 @@
                         <p class="team-year">从事室内设计8年</p>
                     </div>
                     <!-- 详情层 -->
-                    <div class="team-member-box" style="display:none;">
+                    <div class="team-member-box cl" style="display:none;">
                         <div class="member-box-left">
                             <img class="member-img" src="./image/huser1.jpg" alt="">
                         </div>
@@ -307,7 +337,7 @@
                         <p class="team-year">从事室内设计8年</p>
                     </div>
                     <!-- 详情层 -->
-                    <div class="team-member-box" style="display:none;">
+                    <div class="team-member-box cl" style="display:none;">
                         <div class="member-box-left">
                             <img class="member-img" src="./image/huser1.jpg" alt="">
                         </div>
@@ -374,7 +404,7 @@
                         <p class="team-year">从事室内设计8年</p>
                     </div>
                     <!-- 详情层 -->
-                    <div class="team-member-box" style="display:none;">
+                    <div class="team-member-box cl" style="display:none;">
                         <div class="member-box-left">
                             <img class="member-img" src="./image/huser1.jpg" alt="">
                         </div>
@@ -441,7 +471,7 @@
                         <p class="team-year">从事室内设计8年</p>
                     </div>
                     <!-- 详情层 -->
-                    <div class="team-member-box" style="display:none;">
+                    <div class="team-member-box cl" style="display:none;">
                         <div class="member-box-left">
                             <img class="member-img" src="./image/huser1.jpg" alt="">
                         </div>
@@ -508,7 +538,7 @@
                         <p class="team-year">从事室内设计8年</p>
                     </div>
                     <!-- 详情层 -->
-                    <div class="team-member-box" style="display:none;">
+                    <div class="team-member-box cl" style="display:none;">
                         <div class="member-box-left">
                             <img class="member-img" src="./image/huser1.jpg" alt="">
                         </div>
@@ -575,7 +605,7 @@
                         <p class="team-year">从事室内设计8年</p>
                     </div>
                     <!-- 详情层 -->
-                    <div class="team-member-box" style="display:none;">
+                    <div class="team-member-box cl" style="display:none;">
                         <div class="member-box-left">
                             <img class="member-img" src="./image/huser1.jpg" alt="">
                         </div>
@@ -726,7 +756,8 @@
             }, function () {
                 $(this).unblock();
             });
-            $('.teamlist-panel').on('click', '.blockUI.blockMsg.blockElement', function () {
+            $('.teamlist-panel').on('click', '.team-img-content', function () {
+                $(teambox).unblock();
                 $('.team-boxlist').block({
                     message: $(teambox).parent().find(".team-member-box"),
                     css: {
@@ -736,12 +767,15 @@
                         cursor: 'pointer',
                         color: '#FFFFFF',
                         width: '1200px',
-                        height: '500px',
-                        left: '41px'
+                        height: '560px',
+                        left: '41px',
+                        overflow: 'hidden'
                     }
                 });
             })
-
+            $('.member-close').click(function () {
+                $('.team-boxlist').unblock();
+            });
             // 设置宽高比
             function setRatio(dom, ratio) {
                 var h = dom.outerWidth() * (1 / ratio);

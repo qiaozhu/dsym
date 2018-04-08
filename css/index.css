@@ -1,3 +1,20 @@
+/* banner lunbo */
+
+#layui-carousel .layui-carousel-ind ul {
+    background: transparent;
+}
+
+#layui-carousel .layui-carousel-ind li {
+    width: 150px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 0;
+}
+
+#layui-carousel .layui-carousel-ind li.layui-this {
+    background-color: #1e2b5c;
+}
+
 /* aboutus */
 
 .aboutus-panel {
@@ -89,6 +106,10 @@
 .case-boxlist .case-img {
     width: 100%;
     cursor: pointer;
+}
+
+.case-boxlist .case-img:hover+.caseitem-text {
+    color: #FF0000;
 }
 
 .case-boxlist .casetype-item:hover {
@@ -247,12 +268,12 @@
     border-bottom: 2px solid #EEEEEE;
 }
 
-.newx-box {
-    height: 76px;
+.news-item:hover .newx-box {
+    background: #EEEEEE;
 }
 
-.news-item.is-active .newx-box {
-    background: #EEEEEE;
+.newx-box {
+    height: 76px;
 }
 
 .news-time {
