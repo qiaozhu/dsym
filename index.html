@@ -631,16 +631,15 @@
                 var index = $('.news-panel .news-item.is-active').index();
                 if (index == -1) {
                     index = 0;
-                    $('.news-panel .news-item').removeClass("is-active ").eq(index).addClass(
-                        "is-active ");
+                    $('.news-panel .news-item').removeClass("is-active").eq(index).addClass("is-active");
                 } else {
-                    $('.news-panel .news-item').eq(index).removeClass("is-active ");
+                    $('.news-panel .news-item').eq(index).removeClass("is-active");
                     if (index == 3) {
                         index = 0
                     } else {
                         index++
                     }
-                    $('.news-panel .news-item').eq(index).addClass("is-active ");
+                    $('.news-panel .news-item').eq(index).addClass("is-active");
                 }
             }, 1000)
         })
