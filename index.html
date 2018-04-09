@@ -440,7 +440,10 @@
             </span>
         </div>
         <div class="new-col-left">
-            <img src="./image/hnews.jpg" alt="">
+            <img class="is-active" src="./image/hnews.jpg" alt="">
+            <img src="./image/newslist1.jpg" alt="">
+            <img src="./image/newslist2.jpg" alt="">
+            <img src="./image/newslist3.jpg" alt="">
         </div>
         <div class="new-col-right">
             <div>
@@ -625,23 +628,43 @@
             })
 
 
-            // 最新动态循环
-            setInterval(function () {
-                var dom = $('.news-panel .news-item');
-                var index = $('.news-panel .news-item.is-active').index();
+            // 最新动态循环对象
+            var newsTimer = {
+                item: $('.news-panel .news-item'),
+                imgs: $('.news-panel .new-col-left img'),
+                timer: null,
+                idx: 0
+            };
+            // 定时function
+            function newsInterval() {
+                var index = newsTimer.item.filter('.is-active').index();
                 if (index == -1) {
                     index = 0;
-                    $('.news-panel .news-item').removeClass("is-active").eq(index).addClass("is-active");
+                    newsTimer.item.removeClass("is-active").eq(index).addClass("is-active");
+                    newsTimer.imgs.removeClass("is-active").eq(index).addClass("is-active");
                 } else {
-                    $('.news-panel .news-item').eq(index).removeClass("is-active");
-                    if (index == 3) {
-                        index = 0
-                    } else {
-                        index++
-                    }
-                    $('.news-panel .news-item').eq(index).addClass("is-active");
+                    newsTimer.item.eq(index).removeClass("is-active");
+                    newsTimer.imgs.eq(index).removeClass("is-active");
+                    index == 3 ? index = 0 : index++;
+                    newsTimer.item.eq(index).addClass("is-active");
+                    newsTimer.imgs.eq(index).addClass("is-active");
                 }
-            }, 1000)
+                newsTimer.idx = index;
+            }
+            // 开始循环
+            newsTimer.timer = setInterval(newsInterval, 2000)
+
+            // 最新动态hover
+            $('.news-item').hover(function () {
+                newsTimer.item.removeClass("is-active");
+                $(this).addClass("is-active");
+                var index = newsTimer.item.filter('.is-active').index();
+                newsTimer.imgs.removeClass("is-active").eq(index).addClass("is-active");
+                newsTimer.idx = index;
+                clearInterval(newsTimer.timer);
+            }, function () {
+                newsTimer.timer = setInterval(newsInterval, 2000)
+            })
         })
     </script>
 </body>

@@ -249,6 +249,11 @@
 .new-col-left img {
     width: 546px;
     height: 465px;
+    display: none;
+}
+
+.new-col-left img.is-active {
+    display: block;
 }
 
 .new-col-right {
@@ -267,15 +272,11 @@
     border-bottom: 2px solid #EEEEEE;
 }
 
-.news-item:hover .newx-box {
-    background: #EEEEEE;
-}
-
 .news-item.is-active .newx-box {
     background: #EEEEEE;
 }
 
-.newx-box {
+.news-item .newx-box {
     height: 76px;
 }
 
