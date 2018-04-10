@@ -73,7 +73,9 @@
         <div class="layui-row layui-col-space18">
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
                 <div class="news-item">
-                    <img class="news-img" src="./image/newslist1.jpg" alt="">
+                    <a href="./newsdetail.html">
+                        <img class="news-img" src="./image/newslist1.jpg" alt="">
+                    </a>
                     <div class="newsitem-text">
                         <p class="news-title">重新定义美业空间设计新标准</p>
                         <p class="news-text">东申一美创意设计公司以独特的服务定位，在快速发展东申一美创意设计公司以独特的服务定位，在快速发展</p>
@@ -83,7 +85,9 @@
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
                 <div class="news-item">
-                    <img class="news-img" src="./image/newslist2.jpg" alt="">
+                    <a href="./newsdetail.html">
+                        <img class="news-img" src="./image/newslist2.jpg" alt="">
+                    </a>
                     <div class="newsitem-text">
                         <p class="news-title">重新定义美业空间设计新标准</p>
                         <p class="news-text">东申一美创意设计公司以独特的服务定位，在快速发展东申一美创意设计公司以独特的服务定位，在快速发展</p>
@@ -93,7 +97,9 @@
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
                 <div class="news-item">
-                    <img class="news-img" src="./image/newslist3.jpg" alt="">
+                    <a href="./newsdetail.html">
+                        <img class="news-img" src="./image/newslist3.jpg" alt="">
+                    </a>
                     <div class="newsitem-text">
                         <p class="news-title">重新定义美业空间设计新标准</p>
                         <p class="news-text">东申一美创意设计公司以独特的服务定位，在快速发展东申一美创意设计公司以独特的服务定位，在快速发展</p>
@@ -103,7 +109,9 @@
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
                 <div class="news-item">
-                    <img class="news-img" src="./image/newslist1.jpg" alt="">
+                    <a href="./newsdetail.html">
+                        <img class="news-img" src="./image/newslist1.jpg" alt="">
+                    </a>
                     <div class="newsitem-text">
                         <p class="news-title">重新定义美业空间设计新标准</p>
                         <p class="news-text">东申一美创意设计公司以独特的服务定位，在快速发展东申一美创意设计公司以独特的服务定位，在快速发展</p>
@@ -113,7 +121,9 @@
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
                 <div class="news-item">
-                    <img class="news-img" src="./image/newslist2.jpg" alt="">
+                    <a href="./newsdetail.html">
+                        <img class="news-img" src="./image/newslist2.jpg" alt="">
+                    </a>
                     <div class="newsitem-text">
                         <p class="news-title">重新定义美业空间设计新标准</p>
                         <p class="news-text">东申一美创意设计公司以独特的服务定位，在快速发展东申一美创意设计公司以独特的服务定位，在快速发展</p>
@@ -123,7 +133,9 @@
             </div>
             <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
                 <div class="news-item">
-                    <img class="news-img" src="./image/newslist3.jpg" alt="">
+                    <a href="./newsdetail.html">
+                        <img class="news-img" src="./image/newslist3.jpg" alt="">
+                    </a>
                     <div class="newsitem-text">
                         <p class="news-title">重新定义美业空间设计新标准</p>
                         <p class="news-text">东申一美创意设计公司以独特的服务定位，在快速发展东申一美创意设计公司以独特的服务定位，在快速发展</p>
@@ -132,7 +144,8 @@
                 </div>
             </div>
         </div>
-        <div id="laypage"></div>
+        <div id="laypage" class="layui-box layui-laypage">
+        </div>
     </div>
 
 
@@ -187,37 +200,6 @@
             <span class="pl-20"></span>鄂ICP备11014743号
         </div>
     </div>
-    <script src="./js/jquery-2.1.4.min.js"></script>
-    <script src="./js/layui/layui.js"></script>
-    <script>
-        layui.use('laypage', function () {
-            var laypage = layui.laypage;
-
-            //执行一个laypage实例
-            laypage.render({
-                elem: 'laypage', //注意，这里的 test1 是 ID，不用加 # 号
-                limit: 6,
-                layout: ['page', 'skip'],
-                count: 50, //数据总数，从服务端得到
-                // 分页点击触发事件
-                jump: function (obj, first) {
-                    //obj包含了当前分页的所有参数，比如：
-                    console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
-                    console.log(obj.limit); //得到每页显示的条数
-
-                    //首次不执行
-                    if (!first) {
-                        //do something
-                    }
-                }
-            });
-        });
-        $(function () {
-            $('.news-item').on('click', function () {
-                window.location.href = './newsdetail.html'
-            })
-        })
-    </script>
 </body>
 
 </html>

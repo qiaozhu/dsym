@@ -776,15 +776,6 @@
             $('.member-close').click(function () {
                 $('.team-boxlist').unblock();
             });
-            // 设置宽高比
-            function setRatio(dom, ratio) {
-                var h = dom.outerWidth() * (1 / ratio);
-                var borderWid = parseInt(dom.css("border-top-width")) + parseInt(dom.css(
-                    "border-bottom-width")); // 考虑边框的宽度
-                dom.css("height", h + borderWid);
-            }
-            // 设置团队图片高度
-            // setRatio($('.team-img'), (482 / 444));
         });
     </script>
 </body>

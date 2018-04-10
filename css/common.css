@@ -1191,6 +1191,14 @@ body {
 
 /* 分页 */
 
+.layui-laypage .layui-laypage-curr {
+    background: #ff2c28;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    padding-bottom: 2px;
+}
+
 .layui-laypage .layui-laypage-curr .layui-laypage-em {
     background: #ff2c28;
     border-radius: 0;

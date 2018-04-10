@@ -12,6 +12,10 @@
     cursor: pointer;
 }
 
+.news-panel .news-item:hover .newsitem-text {
+    color: #ff0000;
+}
+
 .news-panel .newsitem-text {
     text-align: center;
 }

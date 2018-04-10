@@ -12,6 +12,10 @@
     cursor: pointer;
 }
 
+.case-panel .case-item:hover .caseitem-text {
+    color: #ff0000;
+}
+
 .case-panel .caseitem-text {
     text-align: center;
 }
@@ -28,12 +32,17 @@
     padding-bottom: 40px;
 }
 
+.casetype a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
 .casetype .casetype-item {
     margin-right: 20px;
     cursor: pointer;
 }
 
-.casetype .casetype-item:last-child {
+.casetype a:last-child {
     margin-right: 0px;
 }
 
