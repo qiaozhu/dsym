@@ -189,6 +189,33 @@
             //意见提交
             form.on('submit(contactForm)', function (data) {
                 console.log(JSON.stringify(data.field));
+                var post = {
+                    uname: 'sheji',
+
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "url", //替换url
+                    data: data.field,
+                    dataType: "json",
+                    success: function (response) {
+                        $('#maskContent').block({
+                            message: $(".calcResult1"),
+                            css: {
+                                backgroundColor: 'transparent',
+                                border: 'none',
+                                cursor: 'default',
+                                marginTop: '-100px',
+                                padding: '0',
+                                color: '#FFFFFF',
+                                width: '320px',
+                                height: '250px',
+                                left: '41px',
+                                textAlign: 'left'
+                            }
+                        });
+                    }
+                });
                 return false;
             });
         });

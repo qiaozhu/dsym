@@ -12,7 +12,7 @@
     cursor: pointer;
 }
 
-.news-panel .news-item:hover .newsitem-text {
+.news-panel .news-item:hover .news-title a {
     color: #ff0000;
 }
 
