@@ -763,7 +763,7 @@
             });
             $('.teamlist-panel').on('click', '.team-img-content', function () {
                 $(teambox).unblock();
-                $('.team-boxlist').block({
+                $.blockUI({
                     message: $(teambox).parent().find(".team-member-box"),
                     css: {
                         border: '2px solid rgba(255, 255, 255,0.6)',
@@ -773,13 +773,16 @@
                         color: '#FFFFFF',
                         width: '1200px',
                         height: '560px',
-                        left: '41px',
+                        top: '50%',
+                        left: '50%',
+                        marginLeft: '-602px',
+                        marginTop: '-280px',
                         overflow: 'hidden'
                     }
                 });
             })
             $('.member-close').click(function () {
-                $('.team-boxlist').unblock();
+                $.unblockUI();
             });
         });
     </script>
