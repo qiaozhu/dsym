@@ -61,6 +61,12 @@
     background: #ff0000;
 }
 
+.contactus-map {
+    width: 100%;
+    height: 602px;
+    overflow: hidden;
+}
+
 .contactus-map img {
     width: 100%;
 }

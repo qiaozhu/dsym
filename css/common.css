@@ -119,12 +119,14 @@ area {
 
 a {
     text-decoration: none;
-    cursor: pointer
+    cursor: pointer;
+    color: inherit;
 }
 
 a:hover {
-    text-decoration: underline;
-    outline: none
+    text-decoration: none;
+    outline: none;
+    color: inherit;
 }
 
 a.ie6:hover {
